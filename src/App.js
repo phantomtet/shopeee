@@ -4,6 +4,7 @@ import {HiOutlineShoppingCart} from 'react-icons/hi'
 import {AiFillCaretDown} from 'react-icons/ai'
 import {GiSmartphone, GiLaptop, GiTablet, GiHeadphones, GiWatch} from 'react-icons/gi'
 import {GrDesktop} from 'react-icons/gr'
+import MainSlider from './components/mainSlider';
 function App() {
   return (
     <BrowserRouter>
@@ -124,6 +125,7 @@ function App() {
           </div>
         </div>
         <div>
+          <MainSlider/>
           <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
         </div>
       </div>

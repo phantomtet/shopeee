@@ -11,10 +11,12 @@ input[type='text'] {
   color: black;
 }
 
-image {
+
+img {
   object-fit: cover;
   width: 100%;
   height: auto;
+  transition: 0.25s ease all;
 }
 .test {
   border: 1px solid red;
