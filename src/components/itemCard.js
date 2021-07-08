@@ -4,7 +4,7 @@ export default function ItemCard () {
     const [isHover, setHover] = useState(false)
     return (
         <Link to='/'>
-            <div className={isHover ? 'shadow canclick3' : ''} onMouseLeave={() => setHover(false)} onMouseEnter={() => setHover(true)} style={{maxWidth: '228px',borderRadius: '10px', padding: '10px 15px', backgroundColor: 'white'}}>
+            <div className={isHover ? 'shadow canclick3' : ''} onMouseLeave={() => setHover(false)} onMouseEnter={() => setHover(true)} style={{maxWidth: '228px', minHeight: '400px',borderRadius: '10px', padding: '10px 15px', backgroundColor: 'white'}}>
                 <div style={{fontSize: '12px', display: 'flex', margin: '10px 0'}}>
                     <p style={{borderRadius: '4px', backgroundColor: '#f1f1f1'}}>Trả góp 0%</p>
                 </div>

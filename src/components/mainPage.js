@@ -20,11 +20,27 @@ export default function MainPage () {
             {/* banner cong tac ban hang */}
             <img src='https://cdn.tgdd.vn/2021/05/banner/Desktopbanner-1200x60.png' style={{maxWidth: '1200px', height: '60px', margin: '20px auto', display: 'flex'}}/>
             {/* banner san sale moi ngay */}
-            <div style={{maxWidth: '1200px', display: 'flex', margin: '20px auto', backgroundColor: '#fed101', flexDirection: 'column'}}>
+            <div style={{maxWidth: '1200px', display: 'flex', margin: '20px auto', backgroundColor: '#fed101', flexDirection: 'column', borderRadius: '4px', padding: '10px'}}>
                 <img src='https://cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/birthday17th/tgdd/boxsale_desk.png'/>
-                <div style={{display: 'flex', justifyContent: 'space-around'}}>
+                <div style={{display: 'flex', justifyContent: 'space-around', marginTop: '10px'}}>
                     <ItemCard/><ItemCard/><ItemCard/><ItemCard/><ItemCard/>
                 </div>
+            </div>
+            {/* empty div */}
+            <div style={{height: '60px'}}></div>
+            {/* dien thoai noi bat nhat */}
+            <div style={{display: 'flex', margin: 'auto', maxWidth: '1200px', justifyContent: 'space-between'}}>
+                <strong style={{fontSize: '24px'}}>ĐIỆN THOẠI NỔI BẬT NHẤT</strong>
+                <div style={{display: 'flex'}}>
+                    <p className='canclick4' style={{borderRadius: '20px', border: '1px solid gray', margin: 'auto 5px', padding: '4px'}}>iPhone 1 </p>
+                    <p className='canclick4' style={{borderRadius: '20px', border: '1px solid gray', margin: 'auto 5px', padding: '4px'}}>iPhone 0 </p>
+                    <p className='canclick4' style={{borderRadius: '20px', border: '1px solid gray', margin: 'auto 5px', padding: '4px'}}>Nokia 1280 </p>
+                    <p className='canclick4' style={{borderRadius: '20px', border: '1px solid gray', margin: 'auto 5px', padding: '4px'}}>Xem tất cả <strong>999+</strong> điện thoại </p>
+                </div>
+            </div>
+            {/*10 phones list */}
+            <div style={{display: 'grid', maxWidth: '1200px', margin: '20px auto', gridTemplateColumns: 'auto auto auto auto auto', gridGap: '5px'}}>
+                <ItemCard/><ItemCard/><ItemCard/><ItemCard/><ItemCard/><ItemCard/><ItemCard/><ItemCard/><ItemCard/><ItemCard/>
             </div>
         </div>
     )

@@ -66,3 +66,7 @@ img {
 .canclick3:hover {
   cursor: pointer;
 }
+.canclick4:hover {
+  cursor: pointer;
+  color: #288ad6
+}
