@@ -10,7 +10,9 @@ input[type='text'] {
   border-radius: 4px;
   color: black;
 }
-
+.shadow {
+  box-shadow: rgba(0, 0, 0, 1) 0px 0px 12px 0px
+}
 
 img {
   object-fit: cover;
