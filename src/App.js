@@ -1,7 +1,10 @@
+import 'slick-carousel/slick/slick.css'
+import "slick-carousel/slick/slick-theme.css"
 import './App.css';
-import {BrowserRouter} from 'react-router-dom'
-import MainPage from './components/mainPage';
+import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import NavBar from './components/navBar';
+import MainPage from './pages/mainPage';
+import CategoryPage from './pages/categoryPage';
 function App() {
   return (
     <BrowserRouter>
@@ -10,7 +13,11 @@ function App() {
           <img src='https://cdn.tgdd.vn/2021/07/banner/1200-44-1200x44-1.png' style={{margin: 'auto', width: '100%', maxWidth: '1200px'}}/>
         </div>
         <NavBar/>
-        <MainPage/>
+        <Switch>
+          <Route exact path='/'><MainPage/></Route>
+          <Route exact path='/tin-tuc'></Route>
+          <Route path='/:category'><CategoryPage/></Route>
+        </Switch>
           
       </div>
     </BrowserRouter>

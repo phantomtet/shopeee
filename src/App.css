@@ -4,6 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
   color: inherit;
+  user-select: none;
 }
 input[type='text'] {
   outline: none;
@@ -27,6 +28,7 @@ img {
   position: sticky;
   top: 0;
   width: 100%;
+  z-index: 10;
 }
 .App {
   display: flex;
@@ -69,4 +71,22 @@ img {
 .canclick4:hover {
   cursor: pointer;
   color: #288ad6
+}
+.slick-next {
+  border-radius: 100%;
+  right: 0px;
+  z-index: 1;
+  background-color: darkgoldenrod;
+}
+.slick-next:hover {
+  background-color: darkgoldenrod;
+}
+.slick-prev {
+  border-radius: 100%;
+  left: 0px;
+  z-index: 1;
+  background-color: darkgoldenrod;
+}
+.slick-prev:hover {
+  background-color: darkgoldenrod;
 }

@@ -31,9 +31,11 @@ export default function NavBar () {
                 <p style={{margin: 'auto 5px', minWidth: '60px'}}>Lịch sử đơn hàng</p>
               </div>
               {/* 24h cong nghe */}
-              <div className='canclick2 flex'>
-                <p style={{width: '59px', margin: 'auto 5px'}}>24h <br/>Công nghệ</p>
-              </div>
+              <Link to='/tin-tuc'>
+                <div className='canclick2 flex'>
+                  <p style={{width: '59px', margin: 'auto 5px'}}>24h <br/>Công nghệ</p>
+                </div>
+              </Link>
               {/* hoi dap */}
               <div className='canclick2 ' style={{display: 'flex'}}>
                 <p style={{minWidth: '59px', margin: 'auto 5px'}}>Hỏi đáp</p>
@@ -49,62 +51,62 @@ export default function NavBar () {
           <div style={{display: 'flex', backgroundColor: '#ffd100', padding: 'auto 0', minHeight: '43px', color: 'black', fontSize: '12px', textAlign: 'center', maxWidth: '100%', margin: 'auto'}}>
             <div style={{display: 'flex', margin: '0 auto', width: '1200px', justifyContent: 'space-between'}}>
               {/* dien thoai */}
-              <Link className='canclick' to='/' style={{padding: '0 10px', display: 'flex'}}>
+              <Link className='canclick' to='/dtdd' style={{padding: '0 10px', display: 'flex'}}>
                 <div style={{display: 'flex',}}>
                   <GiSmartphone size='25' color='black' style={{margin: 'auto '}}/>
                   <p style={{margin: 'auto'}}>Điện thoại</p>
                 </div>
               </Link>
               {/* Laptop */}
-              <Link className='canclick' to='/' style={{padding: '0 10px', display: 'flex'}}>
+              <Link className='canclick' to='/laptop' style={{padding: '0 10px', display: 'flex'}}>
                 <div style={{display: 'flex',}}>
                   <GiLaptop size='25' color='black' style={{margin: 'auto 5px'}}/>
                   <p style={{margin: 'auto'}}>Laptop</p>
                 </div>
               </Link>
               {/* Tablet */}
-              <Link className='canclick' to='/' style={{padding: '0 10px', display: 'flex'}}>
+              <Link className='canclick' to='/tablet' style={{padding: '0 10px', display: 'flex'}}>
                 <div style={{display: 'flex',}}>
                   <GiTablet size='25' color='black' style={{margin: 'auto 5px'}}/>
                   <p style={{margin: 'auto'}}>Tablet</p>
                 </div>
               </Link>
               {/* phu kien */}
-              <Link className='canclick' to='/' style={{padding: '0 10px', display: 'flex'}}>
+              <Link className='canclick' to='/phu-kien' style={{padding: '0 10px', display: 'flex'}}>
                 <div style={{display: 'flex',}}>
                   <GiHeadphones size='25' color='black' style={{margin: 'auto '}}/>
-                  <p style={{margin: 'auto', minWidth: '60px'}}>Phụ kiện<br/><AiFillCaretDown/></p>
+                  <p style={{margin: 'auto', minWidth: '60px', display: 'flex'}}>Phụ kiện<AiFillCaretDown style={{margin: 'auto 0'}}/></p>
                 </div>
               </Link>
               {/* dong ho thong minh */}
-              <Link className='canclick' to='/' style={{padding: '0 10px', display: 'flex'}}>
+              <Link className='canclick' to='/dong-ho-thong-minh' style={{padding: '0 10px', display: 'flex'}}>
                 <div style={{display: 'flex',}}>
                   <GiWatch size='25' color='black' style={{margin: 'auto '}}/>
                   <p style={{margin: 'auto 5px', minWidth: '70px', textAlign: 'start'}}>Đồng hồ thông minh</p>
                 </div>
               </Link>
               {/* dong ho thoi trang */}
-              <Link className='canclick' to='/' style={{padding: '0 10px', display: 'flex'}}>
+              <Link className='canclick' to='/dong-ho' style={{padding: '0 10px', display: 'flex'}}>
                 <div style={{display: 'flex',}}>
                   <GiWatch size='25' color='black' style={{margin: 'auto '}}/>
                   <p style={{margin: 'auto 5px', minWidth: '70px', textAlign: 'start'}}>Đồng hồ thời trang</p>
                 </div>
               </Link>
               {/* pc, may in */}
-              <Link className='canclick' to='/' style={{padding: '0 10px', display: 'flex'}}>
+              <Link className='canclick' to='/pc-may-in' style={{padding: '0 10px', display: 'flex'}}>
                 <div style={{display: 'flex',}}>
                   <GrDesktop size='25' color='black' style={{margin: 'auto '}}/>
-                  <p style={{margin: 'auto 5px', minWidth: '60px'}}>PC, Máy in<br/><AiFillCaretDown/></p>
+                  <p style={{margin: 'auto 5px', minWidth: '60px', display: 'flex', textAlign: 'center'}}><p>PC, Máy in</p><AiFillCaretDown style={{margin: 'auto'}}/></p>
                 </div>
               </Link>
               {/* may cu gia re */}
-              <Link className='canclick' to='/' style={{padding: '0 10px', display: 'flex'}}>
+              <Link className='canclick' to='/may-doi-tra' style={{padding: '0 10px', display: 'flex'}}>
                 <div style={{display: 'flex', margin: 'auto'}}>
                   <p style={{margin: 'auto 5px', minWidth: '67px', textAlign: 'start'}}>Máy cũ giá rẻ</p>
                 </div>
               </Link>
               {/* sim, the cao */}
-              <Link className='canclick' to='/' style={{padding: '0 10px', display: 'flex'}}>
+              <Link className='canclick' to='/sim-so-dep' style={{padding: '0 10px', display: 'flex'}}>
                 <div style={{display: 'flex', margin: 'auto'}}>
                   <p style={{margin: 'auto 5px', minWidth: '60px', textAlign: 'start'}}>Sim, Thẻ cào</p>
                 </div>
