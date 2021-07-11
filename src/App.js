@@ -4,7 +4,7 @@ import './App.css';
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import NavBar from './components/navBar';
 import MainPage from './pages/mainPage';
-import CategoryPage from './pages/categoryPage';
+import PhonePage from './pages/phonePage';
 function App() {
   return (
     <BrowserRouter>
@@ -16,7 +16,7 @@ function App() {
         <Switch>
           <Route exact path='/'><MainPage/></Route>
           <Route exact path='/tin-tuc'></Route>
-          <Route path='/:category'><CategoryPage/></Route>
+          <Route path='/dtdd'><PhonePage/></Route>
         </Switch>
           
       </div>

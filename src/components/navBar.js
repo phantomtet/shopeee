@@ -96,7 +96,7 @@ export default function NavBar () {
               <Link className='canclick' to='/pc-may-in' style={{padding: '0 10px', display: 'flex'}}>
                 <div style={{display: 'flex',}}>
                   <GrDesktop size='25' color='black' style={{margin: 'auto '}}/>
-                  <p style={{margin: 'auto 5px', minWidth: '60px', display: 'flex', textAlign: 'center'}}><p>PC, Máy in</p><AiFillCaretDown style={{margin: 'auto'}}/></p>
+                  <p style={{margin: 'auto 5px', minWidth: '60px', display: 'flex', textAlign: 'center'}}>PC, Máy in<AiFillCaretDown style={{margin: 'auto'}}/></p>
                 </div>
               </Link>
               {/* may cu gia re */}
